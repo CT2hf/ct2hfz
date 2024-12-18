@@ -1,0 +1,358 @@
+
+/**
+	* Fernando | 
+	*
+	* I N D E X
+	*
+	*1 - Estilos Globais
+	*2 - Estrutura
+	*3 - Elementos
+	*4 - Texto
+	*5 - Media screen
+
+**/
+
+/************************************************************
+	1 - ESTILOS GLOBAIS
+************************************************************/
+@charset "utf-8";
+html {
+height: 100%;
+/*margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+body {
+background-color: #fff;
+/**background: url("../imag/555.jpg");**/
+background-repeat:no-repeat;
+background-position:center center;
+-o-background-size: 100% 100%, auto;
+-moz-background-size: 100% 100%, auto;
+/**-webkit-background-size: 100% 100%, auto;**/
+/**background-size: 100% 100%, auto;**/
+/**background-attachment:fixed;**/
+background-attachment:auto;
+align-content:center;
+}
+*, *:before, *:after 
+{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/************************************************************
+	2 - ESTRUTURA
+************************************************************/
+main,section,article,aside,footer
+{
+margin-left: auto;
+margin-right: auto;
+}
+
+main 
+{
+min-width:auto;
+max-width:auto;
+height: auto;
+/**overflow: hidden;**/
+margin: auto;
+/**margin: 0;**/
+/**padding: 10%;**/
+/**background: transparent url(../imag/transparent.png);**/
+}
+
+article 
+{
+/*top:0;*/
+float: right;
+min-width: auto;
+max-width: auto;
+height: 100%;
+font-size: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+footer 
+{
+clear:both;
+float:right;
+width:100%;
+background: transparent url(../imag/transparent.png);
+}
+
+
+.transparente
+{
+width: 100vw;
+/*height: 100vh;este ajusta ao tamanho do ecran*/
+height: 100%;
+background-color:#545454;
+background-image: linear-gradient(to top, transparent, rgba(0,0,0,.7));
+margin: auto;
+padding: 0;
+}
+
+
+
+.gotop
+{
+position: fixed;
+bottom: 1%;
+right: 1%;
+font-family:verdana, Arial, Helvetica, sans-serif;
+font-size: 70%;
+color: white;
+background-color: #696969;
+padding: 0.5em;
+
+
+}
+.gotop:hover
+{
+background-color: #EE7600 ;
+}
+
+
+
+
+/************************************************************
+	3 - ELEMENTOS
+************************************************************/
+/*******************************************
+ muda cor link quando passa rato 
+ *****************************************/
+a:link
+{
+text-decoration:none;
+color: #000000;
+}
+a:visited 
+{
+color: #E8E8E8;
+text-decoration:none;
+ }
+
+
+/********* cores dos titulos *****************/
+
+/************************************************************
+	4 - TEXTO
+************************************************************/
+
+.titulo1/**cores 3 **/
+{
+font-family:arial;
+font-size:200%;
+text-align:center;
+text-transform: uppercase;
+text-shadow: 0 10px 0 #CD3700;/*x-offset y-offset blur color*/
+color:#FF6600;
+text-shadow:
+    0 2px 0 #CC5200,
+    0 4px 0 #993D00,
+    0 6px 0 #662900,
+    0 8px 0 #4C1F00,/* cor do fundo sombra */
+    13px 8px 15px rgba(0,0,0,0.1),
+    3px 13px 15px rgba(0,0,0,3.3);
+}
+.subt
+{
+font-family:arial;
+font-size:120%;
+color:#B5B5B5;
+font-weight:bold;
+border-bottom: #f26b36 solid 5px;/**barra por baixo**/
+text-shadow:0px 0px 5px #B5B5B5;
+margin: auto;
+width: 90%;
+line-height: auto;
+padding-top: 2%;
+}
+.sub{
+font-family:verdana, Arial, Helvetica, sans-serif;
+font-size:100%;
+color:#FF7F50;
+background-color: #CFCFCF;
+font-weight:bold;
+border-left:4px solid #696969;
+padding:5px 10px;
+line-height:15px;
+text-shadow:0px 0px 5px #B5B5B5;
+}
+.h3{
+font-family:arial;
+font-size:100%;
+color:#B5B5B5;
+font-weight:bold;
+padding-left: 10px;
+text-shadow:0px 0px 5px #B5B5B5;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.textolink{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:100%;
+line-height:140%;
+color:#B5B5B5;
+/**color:#222020;*/
+}
+
+.mail
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:85%;
+color:#B5B5B5;
+padding-left: 10px;
+}
+.texto
+{
+font-family:arial, verdana;
+font-size:140%;
+color:#000000;
+/**padding-left: 10px ;**/
+/**padding-right: 10px ;**/
+text-align:justify;
+line-height: 130%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: auto;
+width: 90%;
+}
+
+.rodape
+{
+position: absolute;
+width: 100%;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size:100%;
+text-align:right;
+padding-right:6px;
+color:#B5B5B5;
+}
+/* rodape fim da pagina */
+.textosub{
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:90%;
+color:#494545;
+text-align:center;
+padding:0 1px 0;
+background-color: #FF7F50 ;
+/* For WebKit (Safari, Chrome, etc) */
+background: #FF7F50  -webkit-gradient(linear, left top, left bottom, from(#CFCFCF), to(#FF7F50 )) no-repeat;
+/* Mozilla,Firefox/Gecko */
+background: #FF7F50  -moz-linear-gradient(top, #CFCFCF, #FF7F50 ) no-repeat;
+/* IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFCFCF, endColorstr=#FF7F50 ) no-repeat;
+/* IE 8 */
+-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFCFCF, endColorstr=#CFCFCF) no-repeat;
+}
+
+.dica{
+font-family:verdana, Arial, Helvetica, sans-serif;
+display:block;
+text-align: center;
+font-size:90%;
+color:#000000;
+background-color: #ffd5c5;
+width: 85%;
+margin: auto;
+text-shadow:0px 0px 5px #B5B5B5;
+border-left:4px solid #FF6600 ;
+padding:5px 10px;
+}
+
+
+
+/**********************************************************
+5  Media screen
+*************************************************************/
+
+
+/*menu lateral*/
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -150px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 180px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#menu1 {
+  top: 20px;
+  background-color: #FF6600;
+}
+
+#menu2 {
+  top: 80px;
+  background-color: #FF6600; /* Blue */
+}
+
+#menu3 {
+  top: 140px;
+  background-color: #FF6600; /* Red */
+}
+
+#menu4 {
+  top: 200px;
+  background-color: #FF6600 /* Light Black */
+}
+#menu5 {
+  top: 260px;
+  background-color: #FF6600 /* Light Black */
+}
+
+/*flexbox*/
+
+.container{
+	/*border: 1px solid #00FF00;*/
+	margin-left: 3%;
+	gap: 1%;/*espaco entre div*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;/*eixo vertical*/
+	align-items: center;
+	align-content: center;
+	/*justify-content: center;*//* eixo vertical*/
+	/*padding: 0.5%;*/
+
+
+
+}
+.divpro{
+	flex-shrink: 0;/*bloqueia o tamanho da div*/
+	width:605px;
+	height:560px;
+	/*margin: 10px%;*/
+}
+.divsat{
+	width:605px;
+	height:560px;
+	/*margin: 10px%;*/
+	/*background-color: #90EE90;*/
+}
+.divsoft{
+	
+	justify-content: center;
+	width:300px;
+	height:800px;
+	margin: 10px%;
+	/*background-color: #90EE90;*/
+}
